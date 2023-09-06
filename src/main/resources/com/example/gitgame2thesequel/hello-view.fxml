@@ -1,16 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.gitgame2thesequel.HelloController">
-  <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-  </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-  <Label fx:id="welcomeText"/>
-  <Button text="Hello!" onAction="#onHelloButtonClick"/>
+<VBox alignment="TOP_CENTER" prefHeight="370.0" prefWidth="356.0" spacing="20.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gitgame2thesequel.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Label text="My Review Game">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label text="V.3.2.1." />
+      <Separator prefWidth="200.0" />
+      <Label fx:id="welcomeText" text="This is where the question would go." />
+      <HBox alignment="CENTER" prefHeight="154.0" prefWidth="316.0">
+         <children>
+            <Button fx:id="buttonA" mnemonicParsing="false" onAction="#buttonClicked" text="Choice A">
+               <HBox.margin>
+                  <Insets right="100.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="buttonB" mnemonicParsing="false" onAction="#buttonClicked" text="Choice B">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></Button>
+            <Button mnemonicParsing="false" text="Choice C">
+               <HBox.margin>
+                  <Insets bottom="-50.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
 </VBox>
