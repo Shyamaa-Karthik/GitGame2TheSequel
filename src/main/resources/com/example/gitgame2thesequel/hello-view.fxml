@@ -4,15 +4,22 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="TOP_CENTER" prefHeight="370.0" prefWidth="356.0" spacing="20.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gitgame2thesequel.HelloController">
+<VBox alignment="TOP_CENTER" prefHeight="446.0" prefWidth="452.0" spacing="20.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gitgame2thesequel.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
    <children>
+      <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Screen%20Shot%202023-09-07%20at%2012.19.03%20AM.png" />
+         </image>
+      </ImageView>
       <Label text="My Review Game">
          <font>
             <Font size="25.0" />
@@ -20,8 +27,8 @@
       </Label>
       <Label text="V.3.2.1." />
       <Separator prefWidth="200.0" />
-      <Label fx:id="welcomeText" text="This is where the question would go." />
-      <HBox alignment="CENTER" prefHeight="154.0" prefWidth="316.0">
+      <Label fx:id="questionText" text="Question Goes Here" />
+      <HBox alignment="CENTER" prefHeight="48.0" prefWidth="316.0">
          <children>
             <Button fx:id="buttonA" mnemonicParsing="false" onAction="#buttonClicked" text="Choice A">
                <HBox.margin>
@@ -32,9 +39,42 @@
                <HBox.margin>
                   <Insets />
                </HBox.margin></Button>
-            <Button mnemonicParsing="false" text="Choice C">
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="30.0" layoutY="177.0" prefHeight="16.0" prefWidth="316.0">
+         <children>
+            <Button fx:id="buttonC" mnemonicParsing="false" onAction="#buttonClicked" text="Choice C">
                <HBox.margin>
-                  <Insets bottom="-50.0" />
+                  <Insets right="100.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="buttonD" mnemonicParsing="false" onAction="#buttonClicked" text="Choice D">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="30.0" layoutY="245.0" prefHeight="16.0" prefWidth="316.0">
+         <children>
+            <Label fx:id="correctLabel" text="Correct:">
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="wrongLabel" text="Wrong: ">
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="percentageLabel" text=" Percentage: " />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="16.0" prefWidth="316.0">
+         <children>
+            <Button fx:id="submitButton" mnemonicParsing="false" onAction="#buttonClicked" text="Submit">
+               <HBox.margin>
+                  <Insets />
                </HBox.margin>
             </Button>
          </children>
