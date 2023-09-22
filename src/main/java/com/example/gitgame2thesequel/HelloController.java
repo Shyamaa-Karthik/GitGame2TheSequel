@@ -49,7 +49,6 @@ public class HelloController {
     public void setAnswers(int counter){
         int count = (int) (Math.random() * 24);
         String answer1 = VocabTerm.getMultipleChoiceOptions(count);
-        System.out.println(answer1);
         buttonA.setText(answer1);
         int count2 = (int) (Math.random() * 24);
         while(count2 == count){

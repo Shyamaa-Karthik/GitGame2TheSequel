@@ -27,7 +27,7 @@
       </Label>
       <Label text="V.3.2.1." />
       <Separator prefWidth="200.0" />
-      <Label fx:id="questionText" text="Question Goes Here" />
+      <Label fx:id="questionText" text="You have to press submit to start!" />
       <HBox alignment="CENTER" prefHeight="48.0" prefWidth="316.0">
          <children>
             <Button fx:id="buttonA" mnemonicParsing="false" onAction="#buttonClicked" text="Choice A">

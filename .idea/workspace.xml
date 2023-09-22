@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="262efae2-32bd-4fd5-be86-b755e22738e5" name="Changes" comment="Push Commit 1">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Screen Shot 2023-09-07 at 12.19.03 AM.png" afterDir="false" />
+    <list default="true" id="262efae2-32bd-4fd5-be86-b755e22738e5" name="Changes" comment="Push Commit Final, Project Submission">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gitgame2thesequel/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gitgame2thesequel/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gitgame2thesequel/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gitgame2thesequel/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gitgame2thesequel/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gitgame2thesequel/hello-view.fxml" afterDir="false" />
     </list>
@@ -65,12 +63,21 @@
       <option name="project" value="LOCAL" />
       <updated>1694002629537</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Push Commit Final, Project Submission">
+      <option name="closed" value="true" />
+      <created>1694060859350</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1694060859350</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Push Commit 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Push Commit 1" />
+    <MESSAGE value="Push Commit Final, Project Submission" />
+    <option name="LAST_COMMIT_MESSAGE" value="Push Commit Final, Project Submission" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
